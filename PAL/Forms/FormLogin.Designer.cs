@@ -34,22 +34,22 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.labelFP = new System.Windows.Forms.Label();
             this.labelError = new System.Windows.Forms.Label();
-            this.pictureBoxError = new System.Windows.Forms.PictureBox();
-            this.pictureBoxShow = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.pictureBoxHide = new System.Windows.Forms.PictureBox();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.loginBtn = new System.Windows.Forms.Button();
-            this.pictureBoxMinimize = new System.Windows.Forms.PictureBox();
-            this.pictureBoxClose = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.pictureBoxError = new System.Windows.Forms.PictureBox();
+            this.pictureBoxShow = new System.Windows.Forms.PictureBox();
+            this.pictureBoxHide = new System.Windows.Forms.PictureBox();
+            this.pictureBoxMinimize = new System.Windows.Forms.PictureBox();
+            this.pictureBoxClose = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxError)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShow)).BeginInit();
-            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHide)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
@@ -96,6 +96,7 @@
             // labelFP
             // 
             this.labelFP.AutoSize = true;
+            this.labelFP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelFP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(78)))));
             this.labelFP.Location = new System.Drawing.Point(168, 316);
             this.labelFP.Name = "labelFP";
@@ -114,28 +115,6 @@
             this.labelError.TabIndex = 7;
             this.labelError.Text = "Invalid Username or Password";
             // 
-            // pictureBoxError
-            // 
-            this.pictureBoxError.Image = global::TeacherPortal.Properties.Resources.warning;
-            this.pictureBoxError.Location = new System.Drawing.Point(34, 236);
-            this.pictureBoxError.Name = "pictureBoxError";
-            this.pictureBoxError.Size = new System.Drawing.Size(44, 30);
-            this.pictureBoxError.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxError.TabIndex = 6;
-            this.pictureBoxError.TabStop = false;
-            // 
-            // pictureBoxShow
-            // 
-            this.pictureBoxShow.Image = global::TeacherPortal.Properties.Resources.openEyes;
-            this.pictureBoxShow.Location = new System.Drawing.Point(403, 202);
-            this.pictureBoxShow.Name = "pictureBoxShow";
-            this.pictureBoxShow.Size = new System.Drawing.Size(25, 24);
-            this.pictureBoxShow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxShow.TabIndex = 4;
-            this.pictureBoxShow.TabStop = false;
-            this.pictureBoxShow.Click += new System.EventHandler(this.pictureBoxShow_Click);
-            this.pictureBoxShow.MouseHover += new System.EventHandler(this.pictureBoxShow_MouseHover);
-            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.pictureBoxHide);
@@ -146,18 +125,6 @@
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Password";
-            // 
-            // pictureBoxHide
-            // 
-            this.pictureBoxHide.Image = global::TeacherPortal.Properties.Resources.eyesclose;
-            this.pictureBoxHide.Location = new System.Drawing.Point(364, 27);
-            this.pictureBoxHide.Name = "pictureBoxHide";
-            this.pictureBoxHide.Size = new System.Drawing.Size(25, 24);
-            this.pictureBoxHide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxHide.TabIndex = 3;
-            this.pictureBoxHide.TabStop = false;
-            this.pictureBoxHide.Click += new System.EventHandler(this.pictureBoxHide_Click);
-            this.pictureBoxHide.MouseHover += new System.EventHandler(this.pictureBoxHide_MouseHover);
             // 
             // textBoxPassword
             // 
@@ -187,6 +154,65 @@
             this.loginBtn.UseVisualStyleBackColor = false;
             this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(78)))));
+            this.label1.Location = new System.Drawing.Point(139, 65);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(872, 69);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "WELCOME TEACHER PORTAL";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label2.Location = new System.Drawing.Point(12, 694);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(178, 17);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Meet the team behind this";
+            // 
+            // pictureBoxError
+            // 
+            this.pictureBoxError.Image = global::TeacherPortal.Properties.Resources.warning;
+            this.pictureBoxError.Location = new System.Drawing.Point(34, 236);
+            this.pictureBoxError.Name = "pictureBoxError";
+            this.pictureBoxError.Size = new System.Drawing.Size(44, 30);
+            this.pictureBoxError.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxError.TabIndex = 6;
+            this.pictureBoxError.TabStop = false;
+            // 
+            // pictureBoxShow
+            // 
+            this.pictureBoxShow.Image = global::TeacherPortal.Properties.Resources.openEyes;
+            this.pictureBoxShow.Location = new System.Drawing.Point(403, 202);
+            this.pictureBoxShow.Name = "pictureBoxShow";
+            this.pictureBoxShow.Size = new System.Drawing.Size(25, 24);
+            this.pictureBoxShow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxShow.TabIndex = 4;
+            this.pictureBoxShow.TabStop = false;
+            this.pictureBoxShow.Click += new System.EventHandler(this.pictureBoxShow_Click);
+            this.pictureBoxShow.MouseHover += new System.EventHandler(this.pictureBoxShow_MouseHover);
+            // 
+            // pictureBoxHide
+            // 
+            this.pictureBoxHide.Image = global::TeacherPortal.Properties.Resources.eyesclose;
+            this.pictureBoxHide.Location = new System.Drawing.Point(364, 27);
+            this.pictureBoxHide.Name = "pictureBoxHide";
+            this.pictureBoxHide.Size = new System.Drawing.Size(25, 24);
+            this.pictureBoxHide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxHide.TabIndex = 3;
+            this.pictureBoxHide.TabStop = false;
+            this.pictureBoxHide.Click += new System.EventHandler(this.pictureBoxHide_Click);
+            this.pictureBoxHide.MouseHover += new System.EventHandler(this.pictureBoxHide_MouseHover);
+            // 
             // pictureBoxMinimize
             // 
             this.pictureBoxMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -213,31 +239,6 @@
             this.pictureBoxClose.Click += new System.EventHandler(this.pictureBoxClose_Click);
             this.pictureBoxClose.MouseHover += new System.EventHandler(this.pictureBoxClose_MouseHover);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(78)))));
-            this.label1.Location = new System.Drawing.Point(139, 65);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(872, 69);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "WELCOME TEACHER PORTAL";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(12, 694);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(178, 17);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Meet the team behind this";
-            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
@@ -260,10 +261,10 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxError)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShow)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxError)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHide)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMinimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).EndInit();

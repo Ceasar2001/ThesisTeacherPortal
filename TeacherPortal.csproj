@@ -160,6 +160,27 @@
   <ItemGroup>
     <None Include="Resources\verified.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shrink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\small_minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mmminimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard_small.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -80,6 +80,8 @@ namespace TeacherPortal.PAL.Forms
                 if (!string.IsNullOrEmpty(Check))
                 {
                     FormMain formMain = new FormMain();
+                    formMain.Username = textBoxName.Text;
+                    formMain.Role = Check;
                     textBoxName.Clear();
                     textBoxPassword.Clear();
                     pictureBoxHide_Click(sender, e);

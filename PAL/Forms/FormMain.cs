@@ -64,6 +64,7 @@ namespace TeacherPortal.PAL.Forms
         private void buttonDashboard_Click(object sender, EventArgs e)
         {
             MoveSidePanel(buttonDashboard);
+            userControlAddClass1.Visible = false;
             userControlDashboard1.Count();
             userControlDashboard1.Visible = true;
         }
@@ -71,36 +72,43 @@ namespace TeacherPortal.PAL.Forms
         private void buttonAddStudent_Click(object sender, EventArgs e)
         {
             MoveSidePanel(buttonAddStudent);
+            userControlAddClass1.Visible = false;
             userControlDashboard1.Visible = false;
         }
 
         private void buttonAddClass_Click(object sender, EventArgs e)
         {
             MoveSidePanel(buttonAddClass);
+            userControlAddClass1.ClearTextBox();
+            userControlAddClass1.Visible = true;
             userControlDashboard1.Visible = false;
         }
 
         private void buttonAttendance_Click(object sender, EventArgs e)
         {
             MoveSidePanel(buttonAttendance);
+            userControlAddClass1.Visible = false;
             userControlDashboard1.Visible = false;
         }
 
         private void buttonGrade_Click(object sender, EventArgs e)
         {
             MoveSidePanel(buttonGrade);
+            userControlAddClass1.Visible = false;
             userControlDashboard1.Visible = false;
         }
 
         private void buttonReport_Click(object sender, EventArgs e)
         {
             MoveSidePanel(buttonReport);
+            userControlAddClass1.Visible = false;
             userControlDashboard1.Visible = false;
         }
 
         private void buttonRegister_Click(object sender, EventArgs e)
         {
             MoveSidePanel(buttonRegister);
+            userControlAddClass1.Visible = false;
             userControlDashboard1.Visible = false;
         }
 

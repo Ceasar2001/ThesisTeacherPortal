@@ -56,6 +56,7 @@
             this.pictureBoxExpand = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.userControlDashboard1 = new TeacherPortal.PAL.User_Control.UserControlDashboard();
+            this.userControlAddClass1 = new TeacherPortal.PAL.User_Control.UserControlAddClass();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -409,11 +410,23 @@
             this.userControlDashboard1.Size = new System.Drawing.Size(1000, 570);
             this.userControlDashboard1.TabIndex = 0;
             // 
+            // userControlAddClass1
+            // 
+            this.userControlAddClass1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlAddClass1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userControlAddClass1.Location = new System.Drawing.Point(200, 150);
+            this.userControlAddClass1.Margin = new System.Windows.Forms.Padding(5);
+            this.userControlAddClass1.Name = "userControlAddClass1";
+            this.userControlAddClass1.Size = new System.Drawing.Size(1000, 570);
+            this.userControlAddClass1.TabIndex = 0;
+            this.userControlAddClass1.Visible = false;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 720);
+            this.Controls.Add(this.userControlAddClass1);
             this.Controls.Add(this.userControlDashboard1);
             this.Controls.Add(this.panelBack);
             this.Controls.Add(this.panel1);
@@ -468,5 +481,6 @@
         private System.Windows.Forms.Button buttonRegister;
         private System.Windows.Forms.Timer timerDateAndTime;
         private User_Control.UserControlDashboard userControlDashboard1;
+        private User_Control.UserControlAddClass userControlAddClass1;
     }
 }

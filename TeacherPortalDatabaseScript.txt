@@ -28,4 +28,29 @@ VALUES
 ('user', '12345', '+63 9498251349', '11111-111111-1', '03/21/2001', 'Male', 'user@gmail.com', 'User', 'Philippines');
 
 
-Format of the initialization string does not conform to specification starting index 0
+CREATE TABLE Class_Table (
+  Class_ID INTEGER PRIMARY KEY AUTOINCREMENT,
+  Class_Name TEXT UNIQUE,
+  Class_Total INTEGER,
+  Class_Male INTEGER,
+  Class_Female INTEGER
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
